@@ -1,0 +1,7 @@
+# https://github.com/cheshirekow/cmake_format
+
+format:
+  autosort: true
+  dangle_parens: true
+  line_width: 110
+  tab_size: 4
