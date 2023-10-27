@@ -14,6 +14,7 @@ AllowShortFunctionsOnASingleLine: Empty
 AlwaysBreakTemplateDeclarations: Yes
 BinPackArguments: false
 BinPackParameters: false
+BreakArrays: false
 BreakBeforeBinaryOperators: All
 BreakBeforeBraces: Allman
 BreakBeforeConceptDeclarations: Always
@@ -26,17 +27,31 @@ IncludeCategories: []
 IndentPPDirectives: BeforeHash
 IndentWidth: 4
 InsertBraces: true
-UseCRLF: false
-LineEnding: LF
+InsertNewlineAtEOF: true
 KeepEmptyLinesAtTheStartOfBlocks: false
+LineEnding: LF
 PackConstructorInitializers: CurrentLine
 PointerAlignment: Left
 PPIndentWidth: -4
 QualifierAlignment: Left
-# QualifierOrder: ["inline", "static", "constexpr", "const", "type", "restrict"]
+QualifierOrder: ["inline", "static", "constexpr", "const", "type", "restrict"]
 RequiresClausePosition: OwnLine
 SeparateDefinitionBlocks: Always
 SpaceAfterTemplateKeyword: false
 SpaceAroundPointerQualifiers: Before
 SpacesInContainerLiterals: false
 TabWidth: 4
+UseCRLF: false
+
+# AlignConsecutiveShortCaseStatements: true
+#   Enabled: true
+#   AcrossEmptyLines: true
+#   AcrossComments: true
+#   AlignCaseColons: false
+
+IntegerLiteralSeparator:
+  Binary: 4
+  DecimalMinDigits: 6
+  Decimal: 3
+  HexMinDigits: 5
+  Hex: 2

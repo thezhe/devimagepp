@@ -4,9 +4,6 @@
 If:
     PathExclude: /build/.*
 
-InlayHints:
-    Enabled: false
-
 CompileFlags:
     Add:
         [
