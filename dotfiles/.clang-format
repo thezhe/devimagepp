@@ -5,6 +5,13 @@ Language: Cpp
 
 BasedOnStyle: LLVM
 
+IntegerLiteralSeparator:
+  Binary: 4
+  DecimalMinDigits: 6
+  Decimal: 3
+  HexMinDigits: 5
+  Hex: 2
+
 AccessModifierOffset: -4
 AlignArrayOfStructures: Left
 AllowAllArgumentsOnNextLine: false
@@ -42,16 +49,3 @@ SpaceAroundPointerQualifiers: Before
 SpacesInContainerLiterals: false
 TabWidth: 4
 UseCRLF: false
-
-# AlignConsecutiveShortCaseStatements: true
-#   Enabled: true
-#   AcrossEmptyLines: true
-#   AcrossComments: true
-#   AlignCaseColons: false
-
-IntegerLiteralSeparator:
-  Binary: 4
-  DecimalMinDigits: 6
-  Decimal: 3
-  HexMinDigits: 5
-  Hex: 2
