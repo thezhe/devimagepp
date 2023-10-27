@@ -68,5 +68,6 @@ Diagnostics:
             readability-identifier-naming.ValueTemplateParameterCase: camelBack
             readability-identifier-naming.VariableCase: camelBack
             readability-identifier-naming.VirtualMethodCase: camelBack
+            readability-function-cognitive-complexity.Threshold: 15
 
     UnusedIncludes: Strict

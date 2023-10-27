@@ -3,5 +3,5 @@
 format:
   autosort: true
   dangle_parens: true
-  line_width: 110
+  line_width: 80
   tab_size: 4

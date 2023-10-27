@@ -25,7 +25,7 @@ BreakArrays: false
 BreakBeforeBinaryOperators: All
 BreakBeforeBraces: Allman
 BreakBeforeConceptDeclarations: Always
-ColumnLimit: 110
+ColumnLimit: 80
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
 Cpp11BracedListStyle: false
 DeriveLineEnding: false
