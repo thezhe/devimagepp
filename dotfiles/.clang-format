@@ -1,5 +1,5 @@
 # https://clang.llvm.org/docs/ClangFormat.html
-# Tabs are 4 spaces; always Allman brace-wrap scopes.
+# Tabs are 4 spaces. LF. Allman. No empty lines except for EOF.
 
 Language: Cpp
 
@@ -29,6 +29,8 @@ ColumnLimit: 80
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
 Cpp11BracedListStyle: false
 DeriveLineEnding: false
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: Never
 IncludeBlocks: Merge
 IncludeCategories: []
 IndentPPDirectives: BeforeHash
@@ -37,6 +39,7 @@ InsertBraces: true
 InsertNewlineAtEOF: true
 KeepEmptyLinesAtTheStartOfBlocks: false
 LineEnding: LF
+MaxEmptyLinesToKeep: 0
 PackConstructorInitializers: CurrentLine
 PointerAlignment: Left
 PPIndentWidth: -4
