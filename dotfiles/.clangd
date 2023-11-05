@@ -2,18 +2,10 @@
 # As many C++ checks as possible.
 
 If:
-    PathExclude: /build/.*
+    PathExclude: build/.*
 
 CompileFlags:
-    Add:
-        [
-            -Wall,
-            -Wextra,
-            -Rpass-missed=loop-vectorize,
-            -Rpass-analysis=loop-vectorize,
-            -fsave-optimization-record,
-            -std=c++20,
-        ]
+    Add: [-Wall, -Wextra]
 
 Diagnostics:
     ClangTidy:
