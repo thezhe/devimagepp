@@ -2,10 +2,6 @@
 {
     "name": "${localWorkspaceFolderBasename}",
     "dockerFile": "Dockerfile",
-    "runArgs": [
-        "-v",
-        "${localEnv:HOME}/.ssh/:/root/.ssh"
-    ],
     "capAdd": [
         "SYS_PTRACE"
     ],
