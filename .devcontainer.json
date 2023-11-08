@@ -1,6 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json.
 {
-    "name": "${localWorkspaceFolderBasename}",
     "dockerFile": "Dockerfile",
     "capAdd": [
         "SYS_PTRACE"
@@ -37,7 +36,6 @@
                 "git.fetchOnPull": true,
                 "git.followTagsWhenSync": true,
                 "git.pullBeforeCheckout": true,
-                "workbench.colorTheme": "Visual Studio Light - C++",
                 // No telemetry
                 "sonarlint.disableTelemetry": true,
                 // Make sure dependencies, build files, etc. don't trigger linters (e.g., cmake-lint)
@@ -72,7 +70,7 @@
                 "clangd.arguments": [
                     "--header-insertion=never"
                 ],
-                "cpplint.cpplintPath": "/usr/bin/cpplint",
+                "cpplint.cpplintPath": "/usr/bin/cpplint", // TODO symlink to /usr/local/bin
                 "cpplint.lintMode": "workspace",
                 "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json",
                 "launch": {
@@ -83,14 +81,12 @@
                             "request": "launch",
                             "name": "Debug CMake Launch Target",
                             "program": "${command:cmake.launchTargetPath}",
-                            "args": [],
                             "cwd": "${command:cmake.launchTargetDirectory}",
                             "initCommands": [
                                 "settings set target.disable-aslr false"
                             ]
                         }
-                    ],
-                    "compounds": []
+                    ]
                 }
             }
         }
