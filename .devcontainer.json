@@ -60,9 +60,8 @@
                 "c-cpp-flylint.cppcheck.extraArgs": [
                     "--enable=all"
                 ],
-                "c-cpp-flylint.flawfinder.executable": "flawfinder -m 0",
+                "c-cpp-flylint.flawfinder.executable": "flawfinder",
                 "c-cpp-flylint.lizard.extraArgs": [
-                    "-EDuplicate",
                     "-a5"
                 ],
                 "c-cpp-flylint.standard": [
