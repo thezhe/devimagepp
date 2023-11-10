@@ -52,6 +52,7 @@
                 "git.fetchOnPull": true,
                 "git.followTagsWhenSync": true,
                 "git.pullBeforeCheckout": true,
+                "lldb.showDisassembly": "never",
                 "sonarlint.disableTelemetry": true,
                 "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json",
                 "[cmake]": {
