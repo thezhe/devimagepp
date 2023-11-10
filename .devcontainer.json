@@ -9,25 +9,41 @@
             "extensions": [
                 "brobeson.vscode-cmake-lint",
                 "cheshirekow.cmake-format",
+                "cschlosser.doxdocgen",
                 "DavidAnson.vscode-markdownlint",
                 "github.vscode-github-actions",
                 "Gruntfuggly.todo-tree",
                 "jbenden.c-cpp-flylint",
                 "llvm-vs-code-extensions.vscode-clangd",
                 "mine.cpplint",
-                "vadimcn.vscode-lldb",
-                "cschlosser.doxdocgen",
+                "ms-vscode.cmake-tools",
                 "SonarSource.sonarlint-vscode",
                 "streetsidesoftware.code-spell-checker",
                 "tdennis4496.cmantic",
-                "ms-vscode.cmake-tools"
+                "vadimcn.vscode-lldb"
             ],
             "settings": {
+                "C_mantic.headerGuard.style": "Add #pragma once",
+                "c-cpp-flylint.clang.enable": false,
+                "c-cpp-flylint.cppcheck.inconclusive": true,
+                "c-cpp-flylint.flexelint.enable": false,
+                "cmake.buildDirectory": "${workspaceFolder}/../build", // Make sure dependencies, build files, etc. don't trigger linters (e.g., cmake-lint)
                 "cmake.configureOnOpen": false,
+                "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
                 "cmake.installPrefix": "${workspaceFolder}/build/install",
                 "cmake.statusbar.visibility": "compact",
+                "cpplint.lintMode": "workspace",
+                "editor.detectIndentation": false,
+                "editor.formatOnSave": true,
                 "editor.inlayHints.enabled": "off",
+                "editor.insertSpaces": true,
                 "editor.minimap.enabled": false,
+                "editor.tabSize": 4,
+                "files.encoding": "utf8",
+                "files.eol": "\n",
+                "files.insertFinalNewline": true,
+                "files.trimFinalNewlines": true,
+                "files.trimTrailingWhitespace": true,
                 "git.alwaysSignOff": true,
                 "git.autofetch": true,
                 "git.confirmSync": false,
@@ -36,43 +52,25 @@
                 "git.fetchOnPull": true,
                 "git.followTagsWhenSync": true,
                 "git.pullBeforeCheckout": true,
-                // No telemetry
                 "sonarlint.disableTelemetry": true,
-                // Make sure dependencies, build files, etc. don't trigger linters (e.g., cmake-lint)
-                "cmake.buildDirectory": "${workspaceFolder}/../build",
-                // Formatting/Refactoring
+                "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json",
                 "[cmake]": {
                     "editor.defaultFormatter": "cheshirekow.cmake-format"
                 },
-                "C_mantic.headerGuard.style": "Add #pragma once",
-                "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
-                "doxdocgen.c.firstLine": "/*!",
-                "doxdocgen.c.triggerSequence": "/*!",
-                "editor.detectIndentation": false,
-                "editor.formatOnSave": true,
-                "files.insertFinalNewline": true,
-                "files.trimFinalNewlines": true,
-                "files.trimTrailingWhitespace": true,
-                "files.encoding": "utf8",
-                "files.eol": "\n",
-                "editor.tabSize": 4,
-                "editor.insertSpaces": true,
-                // Linting TODO double check flylint exe locations
-                "c-cpp-flylint.clang.enable": false,
-                "c-cpp-flylint.cppcheck.inconclusive": true,
-                "c-cpp-flylint.cppcheck.standard": [
-                    "c++20"
+                "c-cpp-flylint.cppcheck.extraArgs": [
+                    "--enable=all"
                 ],
-                "c-cpp-flylint.flexelint.enable": false,
+                "c-cpp-flylint.flawfinder.executable": "flawfinder -m 0",
+                "c-cpp-flylint.lizard.extraArgs": [
+                    "-EDuplicate",
+                    "-a5"
+                ],
                 "c-cpp-flylint.standard": [
                     "c++20"
                 ],
                 "clangd.arguments": [
                     "--header-insertion=never"
                 ],
-                "cpplint.cpplintPath": "/usr/bin/cpplint", // TODO symlink to /usr/local/bin
-                "cpplint.lintMode": "workspace",
-                "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json",
                 "launch": {
                     "version": "0.2.0",
                     "configurations": [
