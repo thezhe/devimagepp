@@ -1,5 +1,4 @@
 // For format details, see https://aka.ms/devcontainer.json.
-// TODO rename repo to "devimagepp"
 {
     "dockerFile": "Dockerfile",
     "capAdd": [
