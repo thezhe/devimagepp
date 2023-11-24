@@ -12,8 +12,7 @@ Diagnostics:
         Add: "*"
         Remove:
             - "fuchsia-trailing-return"
-            - "llvmlibc-restrict-system-libc-headers"
-            - "llvmlibc-implementation-in-namespace"
+            - "llvmlibc*"
             - "altera-unroll-loops"
             - "fuchsia-overloaded-operator"
             - "readability-identifier-length"
