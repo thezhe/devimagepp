@@ -1,4 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json.
+// TODO rename repo to "devimagepp"
 {
     "dockerFile": "Dockerfile",
     "capAdd": [
@@ -27,9 +28,11 @@
                 "c-cpp-flylint.clang.enable": false,
                 "c-cpp-flylint.cppcheck.inconclusive": true,
                 "c-cpp-flylint.flexelint.enable": false,
-                "cmake.buildDirectory": "${workspaceFolder}/../build", // Make sure dependencies, build files, etc. don't trigger linters (e.g., cmake-lint)
+                // Make sure third-party code doesn't trigger linters (e.g., cmake-lint)
+                "cmake.buildDirectory": "${workspaceFolder}/../build",
                 "cmake.configureOnOpen": false,
                 "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
+                "cmake.generator": "Ninja",
                 "cmake.installPrefix": "${workspaceFolder}/build/install",
                 "cmake.statusbar.visibility": "compact",
                 "cpplint.lintMode": "workspace",
