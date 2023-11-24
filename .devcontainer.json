@@ -87,6 +87,9 @@
                             ]
                         }
                     ]
+                },
+                "markdownlint.config": {
+                    "no-duplicate-heading": false
                 }
             }
         }
