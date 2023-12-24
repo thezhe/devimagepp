@@ -1,4 +1,4 @@
-# Publish `.devcontainer*` in repo root to ghcr
+# Publish `/.devcontainer*` to ghcr.io.
 name: devcontainer-publish
 
 on:
