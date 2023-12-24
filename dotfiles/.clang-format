@@ -1,5 +1,5 @@
-# https://clang.llvm.org/docs/ClangFormat.html
 # Tabs are 4 spaces. LF. Allman. No empty lines except for EOF.
+# See https://clang.llvm.org/docs/ClangFormat.html.
 
 Language: Cpp
 
@@ -44,7 +44,6 @@ PackConstructorInitializers: CurrentLine
 PointerAlignment: Left
 PPIndentWidth: -4
 QualifierAlignment: Left
-# QualifierOrder: ["inline", "static", "constexpr", "const", "type", "restrict"]
 RequiresClausePosition: OwnLine
 SeparateDefinitionBlocks: Always
 SpaceAfterTemplateKeyword: false

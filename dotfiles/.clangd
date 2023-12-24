@@ -1,5 +1,5 @@
-# https://clangd.llvm.org
 # As many C++ checks as possible.
+# See # https://clangd.llvm.org.
 
 If:
     PathExclude: build/.*

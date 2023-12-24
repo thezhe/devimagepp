@@ -1,4 +1,4 @@
-// For format details, see https://aka.ms/devcontainer.json.
+// See https://aka.ms/devcontainer.json.
 {
     "dockerFile": "Dockerfile",
     "capAdd": [
@@ -26,7 +26,10 @@
                 "C_mantic.headerGuard.style": "Add #pragma once",
                 "c-cpp-flylint.clang.enable": false,
                 "c-cpp-flylint.cppcheck.inconclusive": true,
+                "c-cpp-flylint.flawfinder.enable": false,
                 "c-cpp-flylint.flexelint.enable": false,
+                "c-cpp-flylint.lizard.enable": false,
+                "c-cpp-flylint.pclintplus.enable": false,
                 // Make sure third-party code doesn't trigger linters (e.g., cmake-lint)
                 "cmake.buildDirectory": "${workspaceFolder}/../build",
                 "cmake.configureOnOpen": false,

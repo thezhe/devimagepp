@@ -1,4 +1,4 @@
-# https://github.com/cheshirekow/cmake_format
+# See https://github.com/cheshirekow/cmake_format.
 
 format:
   autosort: true
