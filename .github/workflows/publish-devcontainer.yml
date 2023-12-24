@@ -1,14 +1,12 @@
 # Publish `/.devcontainer*` to ghcr.io.
-name: devcontainer-publish
+# See https://github.com/devcontainers/ci/blob/main/docs/github-action.md#getting-started.
+name: Publish dev container
 
 on:
   schedule:
     - cron: "0 0 * * *"
   push:
     branches: ["master"]
-
-env:
-  FULL_TAG: ghcr.io/${{ github.repository }}
 
 jobs:
   build:
@@ -29,5 +27,5 @@ jobs:
       - name: Build and run Dev Container task
         uses: devcontainers/ci@v0.3
         with:
-          imageName: ${{ env.FULL_TAG }}
-          cacheFrom: ${{ env.FULL_TAG }}
+          imageName: ghcr.io/${{ github.repository }}
+          noCache: true
