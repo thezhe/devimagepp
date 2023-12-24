@@ -7,7 +7,7 @@ RUN apt-get update && \
     # Homebrew deps
     procps curl file && \
     rm -rf /var/lib/apt/lists/* && \
-    pip install --no-cache-dir cmake cmakelang ninja PyYAML
+    pip install --no-cache-dir cmake cmakelang cpplint ninja PyYAML
 
 # Homebrew
 RUN useradd -m -s /bin/bash linuxbrew && \
@@ -16,6 +16,7 @@ USER linuxbrew
 RUN NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 RUN eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" && \
     brew install cppcheck
+# hadolint ignore=DL3002
 USER root
 RUN ln -fs /home/linuxbrew/.linuxbrew/bin/* /usr/local/bin
 

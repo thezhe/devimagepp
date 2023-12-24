@@ -1,6 +1,6 @@
 # devimagepp
 
-My C++ [dev container](https://containers.dev/) image.
+My C++ [dev container](https://containers.dev/) image. Intended to run with rootless docker or podman.
 
 ## Usage
 
