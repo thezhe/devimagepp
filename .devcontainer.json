@@ -15,8 +15,8 @@
                 "Gruntfuggly.todo-tree",
                 "jbenden.c-cpp-flylint",
                 "llvm-vs-code-extensions.vscode-clangd",
-                "mine.cpplint",
                 "ms-vscode.cmake-tools",
+                "redhat.vscode-yaml",
                 "SonarSource.sonarlint-vscode",
                 "streetsidesoftware.code-spell-checker",
                 "tdennis4496.cmantic",
@@ -34,7 +34,6 @@
                 "cmake.generator": "Ninja",
                 "cmake.installPrefix": "${workspaceFolder}/build/install",
                 "cmake.statusbar.visibility": "compact",
-                "cpplint.lintMode": "workspace",
                 "editor.detectIndentation": false,
                 "editor.formatOnSave": true,
                 "editor.inlayHints.enabled": "off",
@@ -57,15 +56,16 @@
                 "lldb.showDisassembly": "never",
                 "sonarlint.disableTelemetry": true,
                 "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json",
+                "yaml.format.printWidth": 80,
+                "redhat.telemetry.enabled": false,
                 "[cmake]": {
                     "editor.defaultFormatter": "cheshirekow.cmake-format"
                 },
+                "[yaml]": {
+                    "editor.defaultFormatter": "redhat.vscode-yaml"
+                },
                 "c-cpp-flylint.cppcheck.extraArgs": [
                     "--enable=all"
-                ],
-                "c-cpp-flylint.flawfinder.executable": "flawfinder",
-                "c-cpp-flylint.lizard.extraArgs": [
-                    "-a5"
                 ],
                 "c-cpp-flylint.standard": [
                     "c++20"
