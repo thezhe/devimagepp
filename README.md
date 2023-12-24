@@ -1,18 +1,17 @@
 # devimagepp
 
-My C++ [dev container](https://containers.dev/) image. Intended to run with rootless docker or podman.
+My C++ [dev container](https://containers.dev/) image.
 
 ## Usage
 
-Add the following file to the project root directory:
 ```jsonc
 // .devcontainer.json
+// Use with rootless Docker or Podman.
 {
-    "name": "${localWorkspaceFolderBasename}",
-    "image": "ghcr.io/thezhe/devimagepp",
+    "name": "${localWorkspaceFolderBasename}", // Current folder.
+    "image": "ghcr.io/thezhe/devimagepp", // Rolling release.
     "runArgs": [
-        "-v",
-        "${localEnv:HOME}/.ssh/:/root/.ssh"
+        "-v=${localEnv:HOME}/.ssh/:/root/.ssh" // Mount for tag/commit signing.
     ]
 }
 ```
