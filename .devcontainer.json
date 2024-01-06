@@ -34,7 +34,7 @@
                 "c-cpp-flylint.flexelint.enable": false,
                 "c-cpp-flylint.lizard.enable": false,
                 "c-cpp-flylint.pclintplus.enable": false,
-                // Hide build folder from linters (e.g., cmake-lint).
+                // Hide build folder from linters (e.g., "brobeson.vscode-cmake-lint").
                 "cmake.buildDirectory": "${workspaceFolder}/../build",
                 "cmake.configureOnOpen": false,
                 "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
