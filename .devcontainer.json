@@ -14,6 +14,7 @@
                 "github.vscode-github-actions",
                 "Gruntfuggly.todo-tree",
                 "jbenden.c-cpp-flylint",
+                "josetr.cmake-language-support-vscode",
                 "llvm-vs-code-extensions.vscode-clangd",
                 "mine.cpplint",
                 "ms-vscode.cmake-tools",
@@ -34,8 +35,9 @@
                 "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
                 "cmake.generator": "Ninja",
                 "cmake.installPrefix": "${workspaceFolder}/build/install",
-                "cmake.statusbar.visibility": "compact",
+                "cmake.languageSupport.enableFileAPI": true,
                 "cpplint.lintMode": "workspace",
+                "dotnetAcquisitionExtension.enableTelemetry": false,
                 "editor.detectIndentation": false,
                 "editor.formatOnSave": true,
                 "editor.inlayHints.enabled": "off",
@@ -58,13 +60,8 @@
                 "lldb.showDisassembly": "never",
                 "sonarlint.disableTelemetry": true,
                 "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json",
-                "yaml.format.printWidth": 80,
-                "redhat.telemetry.enabled": false,
                 "[cmake]": {
                     "editor.defaultFormatter": "cheshirekow.cmake-format"
-                },
-                "[yaml]": {
-                    "editor.defaultFormatter": "redhat.vscode-yaml"
                 },
                 "c-cpp-flylint.cppcheck.extraArgs": [
                     "--enable=all"
@@ -75,6 +72,9 @@
                 "clangd.arguments": [
                     "--header-insertion=never"
                 ],
+                "markdownlint.config": {
+                    "no-duplicate-heading": false
+                },
                 "launch": {
                     "version": "0.2.0",
                     "configurations": [
@@ -89,9 +89,6 @@
                             ]
                         }
                     ]
-                },
-                "markdownlint.config": {
-                    "no-duplicate-heading": false
                 }
             }
         }
