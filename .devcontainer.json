@@ -2,8 +2,13 @@
 {
     "dockerFile": "Dockerfile",
     "capAdd": [
+        // Required for "vadimcn.vscode-lldb".
         "SYS_PTRACE"
     ],
+    "containerEnv": {
+        // Required for "josetr.cmake-language-support-vscode" without libicu.
+        "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT": "1"
+    },
     "customizations": {
         "vscode": {
             "extensions": [
@@ -29,7 +34,7 @@
                 "c-cpp-flylint.flexelint.enable": false,
                 "c-cpp-flylint.lizard.enable": false,
                 "c-cpp-flylint.pclintplus.enable": false,
-                // Make sure third-party code doesn't trigger linters (e.g., cmake-lint)
+                // Hide build folder from linters (e.g., cmake-lint).
                 "cmake.buildDirectory": "${workspaceFolder}/../build",
                 "cmake.configureOnOpen": false,
                 "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
@@ -72,9 +77,6 @@
                 "clangd.arguments": [
                     "--header-insertion=never"
                 ],
-                "markdownlint.config": {
-                    "no-duplicate-heading": false
-                },
                 "launch": {
                     "version": "0.2.0",
                     "configurations": [
@@ -89,6 +91,9 @@
                             ]
                         }
                     ]
+                },
+                "markdownlint.config": {
+                    "no-duplicate-heading": false
                 }
             }
         }
