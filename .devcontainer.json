@@ -83,12 +83,19 @@
                         {
                             "type": "lldb",
                             "request": "launch",
-                            "name": "Debug CMake Launch Target",
+                            "name": "CMake: Debug Launch Target",
                             "program": "${command:cmake.launchTargetPath}",
                             "cwd": "${command:cmake.launchTargetDirectory}",
                             "initCommands": [
                                 "settings set target.disable-aslr false"
                             ]
+                        },
+                        {
+                            "type": "cmake",
+                            "request": "launch",
+                            "name": "CMake: Debug Script",
+                            "cmakeDebugType": "script",
+                            "scriptPath": "${file}"
                         }
                     ]
                 },
