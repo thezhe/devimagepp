@@ -4,8 +4,8 @@ My C++ [dev container](https://containers.dev/) image.
 
 ## Usage
 
+`.devcontainer.json`:
 ```jsonc
-// .devcontainer.json
 // Use with rootless Docker or Podman.
 {
     "name": "${localWorkspaceFolderBasename}", // Current folder.
