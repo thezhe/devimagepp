@@ -30,3 +30,5 @@ jobs:
         with:
           imageName: ghcr.io/${{ github.repository }}
           noCache: true
+          refFilterForPush: 'refs/head/master'
+          eventFilterForPush: ''
