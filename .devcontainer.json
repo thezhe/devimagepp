@@ -94,6 +94,14 @@
                         {
                             "type": "cmake",
                             "request": "launch",
+                            "name": "CMake: Debug Configuration",
+                            "cmakeDebugType": "configure",
+                            "clean": false,
+                            "configureAll": false
+                        },
+                        {
+                            "type": "cmake",
+                            "request": "launch",
                             "name": "CMake: Debug Script",
                             "cmakeDebugType": "script",
                             "scriptPath": "${file}"
