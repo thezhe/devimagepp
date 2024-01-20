@@ -1,12 +1,13 @@
-// See https://aka.ms/devcontainer.json.
+// Dev container image build entrypoint
+// See https://aka.ms/devcontainer.json
 {
     "dockerFile": "Dockerfile",
     "capAdd": [
-        // Required for "vadimcn.vscode-lldb".
+        // Required for "vadimcn.vscode-lldb"
         "SYS_PTRACE"
     ],
     "containerEnv": {
-        // Required for "josetr.cmake-language-support-vscode" without libicu.
+        // Required for "josetr.cmake-language-support-vscode" without libicu
         "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT": "1"
     },
     "customizations": {
@@ -34,7 +35,7 @@
                 "c-cpp-flylint.flexelint.enable": false,
                 "c-cpp-flylint.lizard.enable": false,
                 "c-cpp-flylint.pclintplus.enable": false,
-                // Hide build folder from linters (e.g., "brobeson.vscode-cmake-lint").
+                // Hide build folder from linters (e.g., "brobeson.vscode-cmake-lint")
                 "cmake.buildDirectory": "${workspaceFolder}/../build",
                 "cmake.configureOnOpen": false,
                 "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",

@@ -1,5 +1,5 @@
-# As many C++ checks as possible.
-# See # https://clangd.llvm.org.
+# As many C++ checks as possible
+# See # https://clangd.llvm.org
 
 If:
     PathExclude: build/.*
@@ -9,13 +9,13 @@ CompileFlags:
 
 Diagnostics:
     ClangTidy:
-        Add: "*"
+        Add: '*'
         Remove:
-            - "fuchsia-trailing-return"
-            - "llvmlibc*"
-            - "altera-unroll-loops"
-            - "fuchsia-overloaded-operator"
-            - "readability-identifier-length"
+            - 'fuchsia-trailing-return'
+            - 'llvmlibc*'
+            - 'altera-unroll-loops'
+            - 'fuchsia-overloaded-operator'
+            - 'readability-identifier-length'
         CheckOptions:
             readability-identifier-naming.AbstractClassCase: CamelCase
             readability-identifier-naming.ClassCase: CamelCase
@@ -60,5 +60,4 @@ Diagnostics:
             readability-identifier-naming.VariableCase: camelBack
             readability-identifier-naming.VirtualMethodCase: camelBack
             readability-function-cognitive-complexity.Threshold: 15
-
     UnusedIncludes: Strict

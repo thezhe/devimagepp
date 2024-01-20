@@ -1,7 +1,12 @@
-# See https://github.com/cheshirekow/cmake_format.
+# Closest match to .clang-format
+# See https://github.com/cheshirekow/cmake_format
 
 format:
-  autosort: true
-  dangle_parens: true
-  line_width: 80
-  tab_size: 4
+    autosort: true
+    line_width: 80
+    tab_size: 4
+    keyword_case: 'upper'
+    max_pargs_hwrap: 999
+    max_lines_hwrap: 999
+lint:
+    public_var_pattern: '[a-z][0-9a-z_]+'

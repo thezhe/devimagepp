@@ -2,15 +2,14 @@
 # See https://clang.llvm.org/docs/ClangFormat.html.
 
 Language: Cpp
-
 BasedOnStyle: LLVM
 
 IntegerLiteralSeparator:
-  Binary: 4
-  DecimalMinDigits: 6
-  Decimal: 3
-  HexMinDigits: 5
-  Hex: 2
+    Binary: 4
+    DecimalMinDigits: 6
+    Decimal: 3
+    HexMinDigits: 5
+    Hex: 2
 
 AccessModifierOffset: -4
 AlignArrayOfStructures: Left
