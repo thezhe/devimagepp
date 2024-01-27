@@ -11,12 +11,14 @@ Diagnostics:
     ClangTidy:
         Add: '*'
         Remove:
+            - 'altera-unroll-loops'
+            - 'fuchsia-default-arguments-calls'
+            - 'fuchsia-overloaded-operator'
             - 'fuchsia-trailing-return'
             - 'llvmlibc*'
-            - 'altera-unroll-loops'
-            - 'fuchsia-overloaded-operator'
             - 'readability-identifier-length'
         CheckOptions:
+            readability-function-cognitive-complexity.Threshold: 15
             readability-identifier-naming.AbstractClassCase: CamelCase
             readability-identifier-naming.ClassCase: CamelCase
             readability-identifier-naming.ClassConstantCase: camelBack
@@ -59,5 +61,4 @@ Diagnostics:
             readability-identifier-naming.ValueTemplateParameterCase: camelBack
             readability-identifier-naming.VariableCase: camelBack
             readability-identifier-naming.VirtualMethodCase: camelBack
-            readability-function-cognitive-complexity.Threshold: 15
     UnusedIncludes: Strict
