@@ -60,7 +60,7 @@ Diagnostics:
             readability-identifier-naming.StructCase: CamelCase
             readability-identifier-naming.TemplateParameterCase: CamelCase
             readability-identifier-naming.TemplateTemplateParameterCase: CamelCase
-            readability-identifier-naming.TypeAliasCase: lower_case
+            readability-identifier-naming.TypeAliasCase: CamelCase
             readability-identifier-naming.TypeTemplateParameterCase: CamelCase
             readability-identifier-naming.ValueTemplateParameterCase: camelBack
             readability-identifier-naming.VariableCase: camelBack
