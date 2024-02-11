@@ -10,12 +10,15 @@ CompileFlags:
 Diagnostics:
     ClangTidy:
         Add: '*'
+        # Remove rules covered by other linters and/or CompileFlags
         Remove:
             - 'altera-unroll-loops'
             - 'fuchsia-default-arguments-calls'
             - 'fuchsia-overloaded-operator'
             - 'fuchsia-trailing-return'
             - 'llvmlibc*'
+            - 'misc-unused-parameters'
+            - 'modernize-use-trailing-return-type'
             - 'readability-identifier-length'
         CheckOptions:
             readability-function-cognitive-complexity.Threshold: 15
@@ -24,6 +27,7 @@ Diagnostics:
             readability-identifier-naming.ClassConstantCase: camelBack
             readability-identifier-naming.ClassMemberCase: camelBack
             readability-identifier-naming.ClassMethodCase: camelBack
+            readability-identifier-naming.ConceptCase: lower_case
             readability-identifier-naming.ConstantCase: camelBack
             readability-identifier-naming.ConstantMemberCase: camelBack
             readability-identifier-naming.ConstantParameterCase: camelBack
@@ -56,7 +60,7 @@ Diagnostics:
             readability-identifier-naming.StructCase: CamelCase
             readability-identifier-naming.TemplateParameterCase: CamelCase
             readability-identifier-naming.TemplateTemplateParameterCase: CamelCase
-            readability-identifier-naming.TypeAliasCase: CamelCase
+            readability-identifier-naming.TypeAliasCase: lower_case
             readability-identifier-naming.TypeTemplateParameterCase: CamelCase
             readability-identifier-naming.ValueTemplateParameterCase: camelBack
             readability-identifier-naming.VariableCase: camelBack

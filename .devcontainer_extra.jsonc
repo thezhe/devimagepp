@@ -1,0 +1,316 @@
+/*
+* Recommended config options that are not possible to include in the dev image.
+*/
+{
+    "customizations": {
+        "vscode": {
+            /*
+            * Settings that must be set in "User" scope.
+            */
+            "settings": {
+                /*
+                * sonarlint v4.3.0
+                * Turn off obviously bad mistakes to save processing power (e.g., coding in C-style, using new/delete, etc.)
+                * Turn off rules that overlap with other linters
+                * Turn on rules to supplement other linters
+                */
+                "sonarlint.rules": {
+                    "cpp:S3730": {
+                        "level": "off"
+                    },
+                    "cpp:S6222": {
+                        "level": "off"
+                    },
+                    "cpp:S3805": {
+                        "level": "off"
+                    },
+                    "cpp:S956": {
+                        "level": "off"
+                    },
+                    "cpp:S1762": {
+                        "level": "off"
+                    },
+                    "cpp:S989": {
+                        "level": "on"
+                    },
+                    "cpp:S6006": {
+                        "level": "off"
+                    },
+                    "cpp:S5827": {
+                        "level": "off"
+                    },
+                    "cpp:S6026": {
+                        "level": "off"
+                    },
+                    "cpp:S6234": {
+                        "level": "off"
+                    },
+                    "cpp:S4334": {
+                        "level": "on"
+                    },
+                    "cpp:S1709": {
+                        "level": "off"
+                    },
+                    "cpp:S127": {
+                        "level": "on"
+                    },
+                    "cpp:S999": {
+                        "level": "off"
+                    },
+                    "cpp:S1909": {
+                        "level": "off"
+                    },
+                    "cpp:S5950": {
+                        "level": "off"
+                    },
+                    "cpp:S5000": {
+                        "level": "off"
+                    },
+                    "cpp:S4999": {
+                        "level": "off"
+                    },
+                    "cpp:S5798": {
+                        "level": "off"
+                    },
+                    "cpp:S5280": {
+                        "level": "off"
+                    },
+                    "cpp:S1265": {
+                        "level": "off"
+                    },
+                    "cpp:S5487": {
+                        "level": "off"
+                    },
+                    "cpp:S5489": {
+                        "level": "off"
+                    },
+                    "cpp:S5486": {
+                        "level": "off"
+                    },
+                    "cpp:S5275": {
+                        "level": "off"
+                    },
+                    "cpp:S1079": {
+                        "level": "off"
+                    },
+                    "cpp:S5954": {
+                        "level": "off"
+                    },
+                    "cpp:S4997": {
+                        "level": "off"
+                    },
+                    "cpp:M23_357": {
+                        "level": "on"
+                    },
+                    "cpp:S6007": {
+                        "level": "on"
+                    },
+                    "cpp:S1264": {
+                        "level": "off"
+                    },
+                    "cpp:S6655": {
+                        "level": "off"
+                    },
+                    "cpp:S1656": {
+                        "level": "off"
+                    },
+                    "cpp:S2123": {
+                        "level": "off"
+                    },
+                    "cpp:S1134": {
+                        "level": "off"
+                    },
+                    "cpp:S1135": {
+                        "level": "off"
+                    },
+                    "cpp:S1705": {
+                        "level": "on"
+                    },
+                    "cpp:S998": {
+                        "level": "off"
+                    },
+                    "cpp:S890": {
+                        "level": "on"
+                    },
+                    "cpp:S5313": {
+                        "level": "on"
+                    },
+                    "cpp:S6180": {
+                        "level": "off"
+                    },
+                    "cpp:S1913": {
+                        "level": "off"
+                    },
+                    "cpp:S3630": {
+                        "level": "off"
+                    },
+                    "cpp:S5273": {
+                        "level": "off"
+                    },
+                    "cpp:S5281": {
+                        "level": "off"
+                    },
+                    "cpp:S5945": {
+                        "level": "off"
+                    },
+                    "cpp:S1231": {
+                        "level": "off"
+                    },
+                    "cpp:S1448": {
+                        "level": "off"
+                    },
+                    "cpp:S6194": {
+                        "level": "off"
+                    },
+                    "cpp:S3776": {
+                        "level": "off"
+                    },
+                    "cpp:S3358": {
+                        "level": "off"
+                    },
+                    "cpp:S3972": {
+                        "level": "off"
+                    },
+                    "cpp:S134": {
+                        "level": "off"
+                    },
+                    "cpp:S1123": {
+                        "level": "off"
+                    },
+                    "cpp:S107": {
+                        "level": "off"
+                    },
+                    "cpp:S1181": {
+                        "level": "off"
+                    },
+                    "cpp:S5297": {
+                        "level": "off"
+                    },
+                    "cpp:S1000": {
+                        "level": "off"
+                    },
+                    "cpp:S5259": {
+                        "level": "off"
+                    },
+                    "cpp:S5265": {
+                        "level": "off"
+                    },
+                    "cpp:S1188": {
+                        "level": "off"
+                    },
+                    "cpp:S2323": {
+                        "level": "off"
+                    },
+                    "cpp:S2681": {
+                        "level": "off"
+                    },
+                    "cpp:S3261": {
+                        "level": "off"
+                    },
+                    "cpp:S5421": {
+                        "level": "off"
+                    },
+                    "cpp:S5277": {
+                        "level": "off"
+                    },
+                    "cpp:S1820": {
+                        "level": "off"
+                    },
+                    "cpp:S2808": {
+                        "level": "off"
+                    },
+                    "cpp:S797": {
+                        "level": "off"
+                    },
+                    "cpp:M23_201": {
+                        "level": "on"
+                    },
+                    "cpp:S922": {
+                        "level": "on"
+                    },
+                    "cpp:S1244": {
+                        "level": "on"
+                    },
+                    "cpp:S3469": {
+                        "level": "on"
+                    },
+                    "cpp:S4136": {
+                        "level": "on"
+                    },
+                    "cpp:S925": {
+                        "level": "on"
+                    },
+                    "cpp:S845": {
+                        "level": "on"
+                    },
+                    "cpp:S5782": {
+                        "level": "off"
+                    },
+                    "cpp:S3584": {
+                        "level": "off"
+                    },
+                    "cpp:S798": {
+                        "level": "off"
+                    },
+                    "cpp:S1133": {
+                        "level": "off"
+                    },
+                    "cpp:S1912": {
+                        "level": "off"
+                    },
+                    "cpp:S1911": {
+                        "level": "off"
+                    },
+                    "cpp:S5488": {
+                        "level": "off"
+                    },
+                    "cpp:S3522": {
+                        "level": "off"
+                    },
+                    "cpp:S3543": {
+                        "level": "off"
+                    },
+                    "cpp:S1874": {
+                        "level": "off"
+                    },
+                    "cpp:S3588": {
+                        "level": "off"
+                    },
+                    "cpp:S3590": {
+                        "level": "off"
+                    },
+                    "cpp:S1172": {
+                        "level": "off"
+                    },
+                    "cpp:S5283": {
+                        "level": "off"
+                    },
+                    "cpp:S5278": {
+                        "level": "off"
+                    },
+                    "cpp:S3685": {
+                        "level": "off"
+                    },
+                    "cpp:S5825": {
+                        "level": "off"
+                    },
+                    "cpp:S5028": {
+                        "level": "off"
+                    },
+                    "cpp:S3744": {
+                        "level": "off"
+                    },
+                    "cpp:S3520": {
+                        "level": "off"
+                    },
+                    "cpp:S859": {
+                        "level": "off"
+                    },
+                    "cpp:S1481": {
+                        "level": "off"
+                    }
+                }
+            }
+        }
+    }
+}

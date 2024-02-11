@@ -72,6 +72,9 @@
                 "c-cpp-flylint.cppcheck.extraArgs": [
                     "--enable=all"
                 ],
+                "c-cpp-flylint.cppcheck.suppressions": [
+                    "noExplicitConstructor"
+                ],
                 "c-cpp-flylint.standard": [
                     "c++20"
                 ],
