@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM ubuntu:22.04
 
 # apt-get and pip
 # hadolint ignore=DL3008,DL3009,DL3013
