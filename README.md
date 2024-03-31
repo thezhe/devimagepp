@@ -21,3 +21,7 @@ My C++ [dev container](https://containers.dev/) image
 
 - `main` branch - stable rolling release on
 - `develop` branch - unstable
+
+## Known Issues
+
+- Running with Podman/VSCode sometimes requires `Developer: Reload Window` command to finish dev container creation
