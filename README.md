@@ -1,12 +1,11 @@
 # devimagepp
 
-My C++ [dev container](https://containers.dev/) image.
+My C++ [dev container](https://containers.dev/) image
 
 ## Usage
 
-`.devcontainer.json`:
 ```jsonc
-// Use with rootless Docker or Podman
+// .devcontainer.json
 {
     "name": "${localWorkspaceFolderBasename}", // Current folder
     "image": "ghcr.io/thezhe/devimagepp", // Rolling release (master branch)

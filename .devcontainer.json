@@ -37,7 +37,6 @@
                 "c-cpp-flylint.pclintplus.enable": false,
                 // Hide build folder from linters (e.g., "brobeson.vscode-cmake-lint")
                 "cmake.buildDirectory": "${workspaceFolder}/../build",
-                "cmake.configureOnOpen": false,
                 "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
                 "cmake.generator": "Ninja",
                 "cmake.installPrefix": "${workspaceFolder}/build/install",

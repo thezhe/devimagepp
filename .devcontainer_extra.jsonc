@@ -1,11 +1,11 @@
 /*
-* Recommended config options that are not possible to include in the dev image.
+* Recommended config options that are not possible to include in the dev image
 */
 {
     "customizations": {
         "vscode": {
             /*
-            * Settings that must be set in "User" scope.
+            * Settings that must be set in "User" scope
             */
             "settings": {
                 /*

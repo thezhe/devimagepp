@@ -8,7 +8,6 @@ RUN apt-get update && \
     procps curl file && \
     rm -rf /var/lib/apt/lists/* && \
     pip install --no-cache-dir cmake cmakelang cpplint ninja PyYAML
-
 # Homebrew
 RUN useradd -m -s /bin/bash linuxbrew && \
     echo 'linuxbrew ALL=(ALL) NOPASSWD:ALL' >>/etc/sudoers
@@ -19,6 +18,5 @@ RUN eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" && \
 # hadolint ignore=DL3002
 USER root
 RUN ln -fs /home/linuxbrew/.linuxbrew/bin/* /usr/local/bin
-
 # Dotfiles
 COPY dotfiles/. /
