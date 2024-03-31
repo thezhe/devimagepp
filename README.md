@@ -19,5 +19,5 @@ My C++ [dev container](https://containers.dev/) image
 
 ## Versioning
 
-- `main` - stable rolling release on
-- `develop` - unstable
+- `main` branch - stable rolling release on
+- `develop` branch - unstable
