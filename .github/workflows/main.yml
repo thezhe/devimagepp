@@ -15,9 +15,9 @@ jobs:
     permissions:
       packages: write
     steps:
-      - uses: actions/checkout@v4.1.1
+      - uses: actions/checkout@v4
       - name: Login to GitHub Container Registry
-        uses: docker/login-action@v3.1.0
+        uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
@@ -25,6 +25,6 @@ jobs:
       - name: Build and push Dev Container task
         uses: devcontainers/ci@v0.3
         with:
-          imageName: 'ghcr.io/${{ github.repository }}:${{ github.ref_name }}'
+          imageName: ghcr.io/${{ github.repository }}:${{ github.ref_name }}
           noCache: true
           push: always

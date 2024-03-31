@@ -5,8 +5,7 @@ My C++ [dev container](https://containers.dev/) image
 ## Features
 
 - `.devcontainer_extra.json` - recommended config excluded from image
-- `.devcontainer.json` - build entrypoint
-- `Dockerfile` - image definition with configured Git, linters, and build tools
+- `.devcontainer.json` - build entrypoint with configured linters and build tools
 
 ## Usage
 
