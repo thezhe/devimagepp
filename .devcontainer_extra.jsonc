@@ -1,6 +1,3 @@
-/*
-* Recommended config options that are not possible to include in the dev image
-*/
 {
     "customizations": {
         "vscode": {

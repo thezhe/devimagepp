@@ -7,10 +7,7 @@ on:
   schedule:
     - cron: '0 0 * * 0' # weekly
   push:
-    branches: ['master']
   pull_request:
-    branches: ['master']
-  workflow_dispatch:
 
 jobs:
   build:
