@@ -25,6 +25,7 @@ jobs:
       - name: Build and push Dev Container task
         uses: devcontainers/ci@v0.3
         with:
-          imageName: ghcr.io/${{ github.repository }}:${{ github.ref_name }}
+          imageName: ghcr.io/${{ github.repository }}
+          imageTag: ${{ github.ref_name }}
           noCache: true
           push: always
