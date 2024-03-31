@@ -25,9 +25,6 @@ jobs:
       - name: Build and push Dev Container task
         uses: devcontainers/ci@v0.3
         with:
-          imageName: ghcr.io/${{ github.repository }} # TODO tag latest and branch
-
-          noCache: true # TODO verify this pulls base
-
-          refFilterForPush: 'refs/heads/master'
-          eventFilterForPush: ''
+          imageName: 'ghcr.io/${{ github.repository }}:${{ github.ref_name }}'
+          noCache: true
+          push: always
