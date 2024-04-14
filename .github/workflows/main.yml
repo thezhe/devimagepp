@@ -1,7 +1,7 @@
 # Publish `.devcontainer*` to ghcr.io
 # See https://github.com/devcontainers/ci/blob/main/docs/github-action.md#getting-started
 
-name: Main
+name: main
 
 on:
   schedule:

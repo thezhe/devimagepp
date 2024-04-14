@@ -1,5 +1,5 @@
-# Tabs are 4 spaces. LF. Allman. No empty lines except for EOF.
-# See https://clang.llvm.org/docs/ClangFormat.html.
+# Tabs are 4 spaces. LF. Allman. No empty lines except for EOF
+# See https://clang.llvm.org/docs/ClangFormat.html
 
 Language: Cpp
 BasedOnStyle: LLVM
