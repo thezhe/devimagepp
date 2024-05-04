@@ -24,17 +24,21 @@
                 "ms-vscode.cmake-tools",
                 "SonarSource.sonarlint-vscode",
                 "streetsidesoftware.code-spell-checker",
+                "tdennis4496.cmantic",
                 "vadimcn.vscode-lldb"
             ],
             "settings": {
+                "C_mantic.codeActions.enableGenerateGetterSetter": false,
+                "C_mantic.cpp.accessor.getterDefinitionLocation": "Generate definition in matching source file",
+                "C_mantic.cpp.accessor.setterDefinitionLocation": "Generate definition in matching source file",
+                "C_mantic.headerGuard.style": "Add #pragma once",
                 "c-cpp-flylint.clang.enable": false,
                 "c-cpp-flylint.cppcheck.inconclusive": true,
                 "c-cpp-flylint.flawfinder.enable": false,
                 "c-cpp-flylint.flexelint.enable": false,
                 "c-cpp-flylint.lizard.enable": false,
                 "c-cpp-flylint.pclintplus.enable": false,
-                // Hide build folder from linters (e.g., "brobeson.vscode-cmake-lint")
-                "cmake.buildDirectory": "${workspaceFolder}/../build",
+                "cmake.buildDirectory": "${workspaceFolder}/../build", // Hide build folder from linters (e.g., "brobeson.vscode-cmake-lint")
                 "cmake.copyCompileCommands": "${workspaceFolder}/build/compile_commands.json",
                 "cmake.generator": "Ninja",
                 "cmake.installPrefix": "${workspaceFolder}/build/install",
