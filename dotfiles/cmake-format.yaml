@@ -10,3 +10,4 @@ format:
     max_lines_hwrap: 999
 lint:
     public_var_pattern: '[a-z][0-9a-z_]+'
+    disabled_codes: ['C0112']
