@@ -67,3 +67,4 @@ Diagnostics:
             readability-identifier-naming.VariableCase: lower_case
             readability-identifier-naming.VirtualMethodCase: camelBack
     UnusedIncludes: Strict
+    MissingIncludes: Strict
