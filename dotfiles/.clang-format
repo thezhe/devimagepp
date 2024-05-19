@@ -40,7 +40,7 @@ PointerAlignment: Left
 PPIndentWidth: -4
 QualifierAlignment: Left
 RequiresClausePosition: OwnLine
-SeparateDefinitionBlocks: Always
+SeparateDefinitionBlocks: Never
 SpaceAfterTemplateKeyword: false
 SpaceAroundPointerQualifiers: Before
 SpacesInContainerLiterals: false

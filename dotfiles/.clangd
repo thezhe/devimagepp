@@ -1,4 +1,3 @@
-# As many checks as reasonable
 If:
     PathExclude: build/.*
 CompileFlags:
