@@ -1,9 +1,8 @@
+// Extra configuration excluded from the image
 {
     "customizations": {
         "vscode": {
-            /*
-            * Settings that must be set in "User" scope
-            */
+            // Settings that must be set in "User" scope
             "settings": {
                 /*
                 * sonarlint v4.3.0

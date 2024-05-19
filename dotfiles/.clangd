@@ -1,16 +1,11 @@
-# As many C++ checks as possible
-# See # https://clangd.llvm.org
-
+# As many checks as reasonable
 If:
     PathExclude: build/.*
-
 CompileFlags:
     Add: [-Wall, -Wextra]
-
 Diagnostics:
     ClangTidy:
         Add: '*'
-        # Remove rules covered by other linters and/or CompileFlags
         Remove:
             - 'altera-unroll-loops'
             - 'fuchsia-default-arguments-calls'
@@ -20,7 +15,6 @@ Diagnostics:
             - 'misc-unused-parameters'
             - 'modernize-use-trailing-return-type'
             - 'readability-identifier-length'
-        # Types are CamelCase. Parameters, members, and methods are camelBack. Everything else is lower_case.
         CheckOptions:
             readability-function-cognitive-complexity.Threshold: 15
             readability-identifier-naming.AbstractClassCase: CamelCase
@@ -66,5 +60,5 @@ Diagnostics:
             readability-identifier-naming.ValueTemplateParameterCase: camelBack
             readability-identifier-naming.VariableCase: lower_case
             readability-identifier-naming.VirtualMethodCase: camelBack
-    UnusedIncludes: Strict
     MissingIncludes: Strict
+    UnusedIncludes: Strict
