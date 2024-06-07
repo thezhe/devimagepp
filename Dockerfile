@@ -1,4 +1,4 @@
-FROM ubuntu:noble
+FROM ubuntu:jammy
 # hadolint ignore=DL3008,DL3013,DL3015
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     apt-get install -y g++ && \
