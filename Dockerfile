@@ -7,4 +7,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists && \
     pip install --no-cache-dir --break-system-packages -U cmakelang
-COPY dotfiles/. /
+COPY dotfiles /
