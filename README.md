@@ -1,6 +1,6 @@
 # devimagepp
 
-C++ [dev container](https://containers.dev/overview) image
+C++ [dev container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) image
 
 ## Usage
 
@@ -18,7 +18,7 @@ Linters (below) are core to this devimage. Included dotfiles configure linters s
 
 ### C++
 
-- [clangd](https://clangd.llvm.org/)
+- [clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)
 - [cppcheck](https://cppcheck.sourceforge.io/)
 - [cpplint](https://github.com/cpplint/cpplint)
 - [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.sonarlint-vscode)
