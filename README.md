@@ -14,7 +14,7 @@ C++ [dev container](https://marketplace.visualstudio.com/items?itemName=ms-vscod
 
 ## Features
 
-Linters (below) are core to this devimage. Included dotfiles configure linters such that any two are mostly orthogonal. The develop should still fix warnings, build, and use common sense before committing.
+Linters (below) are core. Dotfiles configure linters as mostly orthogonal. Developer should fix warnings, build, and use common sense before committing.
 
 ### C++
 
@@ -36,7 +36,6 @@ Linters (below) are core to this devimage. Included dotfiles configure linters s
 
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-
 
 ## Versioning
 
