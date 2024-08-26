@@ -44,7 +44,7 @@
                 "cmake.installPrefix": "${workspaceFolder}/build/install",
                 "cmake.languageSupport.enableFileAPI": true,
                 "cpplint.lintMode": "workspace",
-                "cpplint.cpplintPath": "/usr/bin/cpplint",
+                "cpplint.cpplintPath": "/usr/local/bin/cpplint",
                 "dotnetAcquisitionExtension.enableTelemetry": false,
                 "editor.detectIndentation": false,
                 "editor.formatOnSave": true,
