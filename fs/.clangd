@@ -10,6 +10,7 @@ Diagnostics:
             - 'fuchsia-default-arguments-calls'
             - 'fuchsia-overloaded-operator'
             - 'fuchsia-trailing-return'
+            - 'google-readability-todo'
             - 'llvmlibc*'
             - 'misc-unused-parameters'
             - 'modernize-use-trailing-return-type'
