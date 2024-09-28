@@ -14,7 +14,7 @@ C++ [dev container](https://marketplace.visualstudio.com/items?itemName=ms-vscod
 
 ## Features
 
-Linters (below) are core. Dotfiles configure linters as mostly orthogonal. Developer should fix warnings, build, and use common sense before committing.
+This image runs mostly-orthogonal linters for shift-left software development. Compilation, warnings, and common sense are burdens on the developer.
 
 ### C++
 
@@ -27,10 +27,6 @@ Linters (below) are core. Dotfiles configure linters as mostly orthogonal. Devel
 
 - [cmake-lint](https://github.com/cheshirekow/cmake_format)
 - [osv-scanner](https://google.github.io/osv-scanner/)
-
-### GitHub
-
-- [actionlint](https://github.com/rhysd/actionlint)
 
 ### Documentation
 
