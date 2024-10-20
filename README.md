@@ -1,6 +1,6 @@
 # devimagepp
 
-C++ [dev container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) image
+C++ [dev container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) rootless image
 
 ## Usage
 
